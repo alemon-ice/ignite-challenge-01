@@ -21,7 +21,7 @@ export function TaskList() {
     setTasks(state => [
       ...state,
       {
-        id: state.length + 1,
+        id: Math.random(),
         title: newTaskTitle,
         isComplete: false
       }
